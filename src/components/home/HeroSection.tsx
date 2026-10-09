@@ -27,9 +27,9 @@ export default function HeroSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center space-y-8">
         {/* Top Trust Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/20 border border-amber-400/40 backdrop-blur-md shadow-lg">
-          <Sparkles className="w-4 h-4 text-amber-400 fill-amber-400" />
+          {/* <Sparkles className="w-4 h-4 text-amber-400 fill-amber-400" /> */}
           <span className="text-xs font-bold uppercase tracking-widest text-amber-200">
-            Ranchi’s Premier Event & Wedding Specialist • 18+ Years
+            कर्म ही पूजा है।
           </span>
         </div>
 

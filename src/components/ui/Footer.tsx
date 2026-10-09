@@ -30,7 +30,7 @@ export default function Footer() {
                 <span className="font-serif text-2xl font-bold gold-gradient-text block">
                   Sai Decorations
                 </span>
-                <span className="text-xs text-amber-300">Shambhu Gupta • Ranchi</span>
+                {/* <span className="text-xs text-amber-300">Shambhu Gupta • Ranchi</span> */}
               </div>
             </div>
 

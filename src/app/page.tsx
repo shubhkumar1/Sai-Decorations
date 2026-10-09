@@ -18,8 +18,8 @@ export default function HomePage() {
       <TrustCounters />
       <ServicesGrid />
       <WhyChooseUs />
-      <GalleryPreview />
-      <PackagesTeaser />
+      {/* <GalleryPreview /> */}
+      {/* <PackagesTeaser /> */}
       <TestimonialsSection />
       <FaqSection />
       <FinalCtaSection />

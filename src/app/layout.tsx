@@ -42,6 +42,12 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'Sai Decorations Ranchi' }],
   creator: 'Sai Decorations',
+  applicationName: 'Sai Decorations',
+  appleWebApp: {
+    capable: true,
+    title: 'Sai Decorations',
+    statusBarStyle: 'black-translucent'
+  },
   openGraph: {
     type: 'website',
     locale: 'en_IN',
@@ -77,7 +83,14 @@ export const metadata: Metadata = {
     }
   },
   icons: {
-    icon: '/favicon.ico'
+    icon: [
+      { url: '/icon.png', type: 'image/png' },
+      { url: '/favicon.ico', sizes: 'any' }
+    ],
+    shortcut: ['/icon.png'],
+    apple: [
+      { url: '/icon.png', sizes: '180x180', type: 'image/png' }
+    ]
   }
 };
 
@@ -90,7 +103,12 @@ export default function RootLayout({
     <html lang="en" className={`${playfair.variable} ${jakarta.variable} scroll-smooth`}>
       <head>
         <link rel="canonical" href="https://saidecorationsranchi.com" />
+        <link rel="icon" href="/icon.png" type="image/png" sizes="any" />
+        <link rel="apple-touch-icon" href="/icon.png" />
+        <link rel="shortcut icon" href="/icon.png" />
         <meta name="theme-color" content="#4A101A" />
+        <meta name="apple-mobile-web-app-title" content="Sai Decorations" />
+        <meta name="application-name" content="Sai Decorations" />
       </head>
       <body className="min-h-screen flex flex-col bg-cream text-stone-900 antialiased selection:bg-amber-200 selection:text-maroon">
         <AuthProvider>
